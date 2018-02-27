@@ -82,6 +82,11 @@
                 <headerstr>IFACE rxerr/s txerr/s coll/s rxdrop/s txdrop/s txcarr/s rxfram/s rxfifo/s txfifo/s</headerstr>
                 <graphname>INET2</graphname>
             </Stat>
+           <Stat name="inet22">
+                <headerstr>IFACE rxpck/s txpck/s rxkB/s txkB/s rxcmp/s txcmp/s rxmcst/s %ifutil</headerstr>
+                <graphname>INET2</graphname>
+            </Stat>
+
  
             <Stat name="intr">
                 <headerstr>INTR intr/s</headerstr>
@@ -120,6 +125,11 @@
             <!-- Linux 3.2, sysstat version 10.0.5 -->
             <Stat name="kmem6">
                 <headerstr>kbmemfree kbmemused %memused kbbuffers kbcached kbcommit %commit kbactive kbinact</headerstr>
+                <graphname>KMEM</graphname>
+            </Stat>
+
+            <Stat name="kmem7">
+                <headerstr>kbmemfree kbmemused %memused kbbuffers kbcached kbcommit %commit kbactive kbinact kbdirty kbanonpg kbslab kbkstack kbpgtbl kbvmused</headerstr>
                 <graphname>KMEM</graphname>
             </Stat>
                         
